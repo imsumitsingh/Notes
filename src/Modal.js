@@ -71,7 +71,7 @@ function Modal(props) {
                
                <div className="form-group">
                
-               <input autoFocus {...register("title", { required: true })} type="text" className="form-input"></input>
+               <input autoComplete="off" autoFocus {...register("title", { required: true })} type="text" className="form-input"></input>
                <label>Title</label>
                {errors.title && <span className="err">This field is required</span>}
                </div>

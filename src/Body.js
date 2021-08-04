@@ -49,7 +49,7 @@ function Body() {
         <div className="container">
 
             {
-                data.map((ele,index)=>{
+                data.reverse().map((ele,index)=>{
                     return(
 
                         <Notes time={ele.time} date={ele.date} title={ele.title} content={ele.content}></Notes>
