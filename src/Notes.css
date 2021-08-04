@@ -1,0 +1,74 @@
+.card{
+ width: 22%;
+ height: 400px;
+ background-color: white !important;
+ margin: 1em;
+ border-radius: 4px;
+ box-shadow: 0px 0px 1px #3b2828d8,0px 0px 1px #b4b1b1d8;
+ position: relative;
+}
+.card-header{
+  padding: .7em 1em;
+  
+}
+.card-timing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7em;
+    
+}
+.card-header h4{
+    font-size: 1.2em;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.card-body{
+    padding: 0.5em 1em;
+}
+.hr{
+    background-color: rgb(202, 201, 199) !important;
+    height: 1px;
+    width: 100%;
+}
+.card-body p{
+    font-size: 0.94em;
+    letter-spacing: 0.08em;
+}
+.card-body p::first-letter{
+    background-color: rgb(30, 28, 44); 
+    color:white;
+    padding: 1px 10px;
+    margin-right:2px ;
+    font-size: 1.4em;
+    border-radius: 4px;
+    text-transform: uppercase;
+    
+}
+.card-footer{
+position: absolute;
+bottom: 0;
+width: 100%;
+box-sizing: border-box;
+height: 2.3em;
+
+}
+.footer-btn{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    align-items: center;
+    padding: 0 1em;
+    margin-top: 0.4em;
+}
+
+@media(max-width:576px){
+    .card-body p::first-letter {
+      font-size: 15px;
+    }
+}
